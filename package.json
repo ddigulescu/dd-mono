@@ -1,0 +1,20 @@
+{
+    "name": "root",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "clean": "lerna clean --yes",
+        "bootstrap": "lerna bootstrap",
+        "app:start": "lerna run app:start --parallel",
+        "build": "lerna run build --parallel"
+    },
+    "devDependencies": {
+        "lerna": "^3.16.4"
+    },
+    "dependencies": {
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "name": "@dd/lib",
+    "version": "1.0.0",
+    "source": "src/index.js",
+    "main": "dist/dd-lib.js",
+    "module": "dist/dd-lib.mjs",
+    "unpkg": "dist/dd-lib.umd.js",
+    "private": true,
+    "author": "Dragos Digulescu <dragos.digulescu@iquestgroup.com> (https://github.com/ddigulescu)",
+    "license": "MIT",
+    "scripts": {
+        "build": "microbundle --jsx React.createElement --sourcemap false --no-compress"
+    },
+    "peerDependencies": {
+        "react": "^16.9.0"
+    },
+    "devDependencies": {
+        "microbundle": "^0.11.0"
+    }
+}
